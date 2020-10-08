@@ -1,6 +1,6 @@
 # Link do Site
 
-https://empreendendoideias.netlify.app
+https://minasvalley.netlify.app
 
 # Template de Projeto
 
