@@ -1,0 +1,485 @@
+<?php
+header("Content-type:text/html; charset=utf8");
+//recuperar arquivo de classe
+require_once "Dados.php";
+//criar um objeto do tipo cargo
+$dados = new Dados();
+//chamar funcao verificarEstados
+$dados->verificarEstados();
+//chamar funcao verificaNavegadorSO
+$dados->verificaNavegadorSO();
+
+//chamar a funçao para excluir testando se foi clicado no botao excluir
+
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Loja do Pedroca</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+          
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+
+<body>
+	<header id="header">
+		<div class="header_top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="index.html"><i class="fa fa-phone"></i> +4002 8922</a></li>
+								=
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 clearfix">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="Lojinho do predo" /></a>
+						</div>
+						
+					</div>
+					<div class="col-md-8 clearfix">
+						<div class="shop-menu clearfix pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="analitcs/login.html"><i class="fa fa-user"></i>Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="analitcs/login.html" class="active">Login</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container">
+  <h2></h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/home/girl1.jpg" style="width:50%; margin: auto;">
+        <div class="carousel-caption">
+         <h3>OFF SALE</h3>
+          <p>ALL PRODUCTS WITH DISCOUNT!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/home/girl2.jpg" style="width:50%; margin: auto;">
+        <div class="carousel-caption">
+          <h3>OFF SALE</h3>
+          <p>ALL PRODUCTS WITH DISCOUNT!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/home/girl3.jpg" style="width:50%; margin: auto;">
+        <div class="carousel-caption">
+          <h3>OFF SALE</h3>
+          <p>ALL PRODUCTS WITH DISCOUNT!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<br><br><br><br><br>
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						
+						
+					
+						<div class="brands_products">
+							
+						</div>
+						
+						<div class="price-range">
+							
+						</div>
+						
+						<div class="shipping text-center">
+							<img src="images/home/shipping.jpg" alt="" />
+						</div>
+					
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+					<div class="features_items">
+						<h2 class="title text-center">Itens Populares</h2>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="images/home/product1.jpg" alt="" />
+											<h2>$56</h2>
+											<p>Easy Polo Black Edition</p>
+											<a href="Produto1.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="Produto1.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/home/product2.jpg" alt="" />
+										<h2>$56</h2>
+										<p>Easy Polo Black Edition</p>
+										<a href="Produto2.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>$56</h2>
+											<p>Easy Polo Black Edition</p>
+											<a href="Produto2.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/home/product3.jpg" alt="" />
+										<h2>$56</h2>
+										<p>Easy Polo Black Edition</p>
+										<a href="Produto3.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>$56</h2>
+											<p>Easy Polo Black Edition</p>
+											<a href="Produto3.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/home/product4.jpg" alt="" />
+										<h2>$56</h2>
+										<p>Easy Polo Black Edition</p>
+										<a href="Produto4.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>$56</h2>
+											<p>Easy Polo Black Edition</p>
+											<a href="Produto4.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/home/product5.jpg" alt="" />
+										<h2>$56</h2>
+										<p>Easy Polo Black Edition</p>
+										<a href="Produto5.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>$56</h2>
+											<p>Easy Polo Black Edition</p>
+											<a href="Produto5.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+										</div>
+									</div>
+									<img src="images/home/sale.png" class="new" alt="" />
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/home/product6.jpg" alt="" />
+										<h2>$56</h2>
+										<p>Easy Polo Black Edition</p>
+										<a href="Produto6.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>$56</h2>
+											<p>Easy Polo Black Edition</p>
+											<a href="Produto6.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Vizualizar</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>e</span>-shopper</h2>
+							<p>Ado Ado Ado o jão jão passa o rodo nas muie</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="index.html">
+									<div class="iframe-img">
+										<img src="images/home/iframe1.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Xesquedele</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/home/iframe2.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Dale Dele</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="index.html">
+									<div class="iframe-img">
+										<img src="images/home/iframe3.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Fino do Fino</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="index.html">
+									<div class="iframe-img">
+										<img src="images/home/iframe4.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Tamo unido igual porco sem mamilo</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="images/home/map.png" alt="" />
+							<p>BH é quem ? BH é nois , BH(Nois)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Serviços</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="index.html">Ajuda online</a></li>
+								<li><a href="index.html">Nos Contate</a></li>
+								<li><a href="index.html">Status das ordens</a></li>
+								<li><a href="index.html">Mudar localização</a></li>
+								<li><a href="index.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Compra rápida</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="index.html">T-Shirt</a></li>
+								<li><a href="index.html">Homem</a></li>
+								<li><a href="index.html">Mulheres</a></li>
+								<li><a href="index.html">Cartão Presente</a></li>
+								<li><a href="index.html">Sapatos</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Politicas</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="index.html">Termos de uso</a></li>
+								<li><a href="index.html">Termos de Privacidade</a></li>
+								<li><a href="index.html">Termos de Reembolso</a></li>
+								<li><a href="index.html">Sistema de Faturamento</a></li>
+								<li><a href="index.html">Sistema de Ticket</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Sobre A loja</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="index.html">Informações da Empresa</a></li>
+								<li><a href="index.html">Carreiras</a></li>
+								<li><a href="index.html">Localização da loja</a></li>
+								<li><a href="index.html">Programa de Afiliados</a></li>
+								<li><a href="index.html">Copyright</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>Sobre o Vendedor</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Receba as atualizações mais recentes do <br />nosso site e seja atualizado você mesmo</p>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2018 Copia não Comédia. Todos os Direitos Reservados.</p>
+					<p class="pull-right">Designed by <span><a>CHAOS</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
