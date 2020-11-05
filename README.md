@@ -1,6 +1,6 @@
 # Link do Site
 
-https://minasvalley.netlify.app
+https://minasvalley.herokuapp.com/
 
 # GITFLOW
 
